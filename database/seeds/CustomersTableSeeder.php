@@ -43,6 +43,6 @@ class CustomersTableSeeder extends Seeder
 
         DB::unprepared("DROP procedure IF EXISTS insertRandomCustomers");
         DB::unprepared($procedure);
-        DB::select('call insertRandomCustomers(1000)');
+        DB::select('call insertRandomCustomers(30000)');
     }
 }
