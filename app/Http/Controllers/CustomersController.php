@@ -11,14 +11,10 @@ class CustomersController extends Controller
 {
     public function index(MessageService $ms)
     {
-        // Get active queues
-        $activeJobs = $ms->getActiveJobs();
-
         $countryList = Countries::all();
 
         return view('customers', [
             'countryList' => $countryList,
-            'activeJobs' => $activeJobs,
         ]);
     }
 
