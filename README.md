@@ -1,2 +1,3 @@
-# qms
-Queue Management System
+# QMS
+### Documentation
+https://github.com/snoooopx/qms/wiki
